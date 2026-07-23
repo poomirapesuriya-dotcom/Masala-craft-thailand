@@ -1,14 +1,350 @@
-MasalaCraft/
-├── index.html
-├── css/
-│   ├── style.css
-│   ├── responsive.css
-│   └── animations.css
-├── js/
-│   ├── main.js
-│   └── scroll.js
-├── images/
-│   ├── logo.png
-│   ├── hero.jpg
-│   └── menu/
-└── README.md
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masala Craft | Crafted with Spice</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Noto Sans Thai',sans-serif;
+}
+
+body{
+background:#f7f3ec;
+color:#333;
+}
+
+header{
+background:#fff;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-size:24px;
+font-weight:bold;
+color:#5c3821;
+}
+
+.logo img{
+width:60px;
+height:60px;
+object-fit:contain;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+.hero{
+padding:80px 20px;
+text-align:center;
+background:linear-gradient(#fff,#f4ede2);
+}
+
+.hero img{
+width:180px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:48px;
+color:#5c3821;
+}
+
+.hero p{
+margin-top:20px;
+font-size:20px;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 35px;
+background:#7b4b2a;
+color:white;
+text-decoration:none;
+border-radius:40px;
+}
+
+section{
+padding:70px 0;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+color:#5c3821;
+font-size:36px;
+}
+
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin:15px 0;
+}
+
+.price{
+color:#b25b1d;
+font-size:24px;
+font-weight:bold;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+font-size:18px;
+}
+
+.contact{
+text-align:center;
+line-height:2;
+}
+
+footer{
+background:#3d2818;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+footer a{
+color:#fff;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+<img src="images/logo.png" alt="Masala Craft">
+<span>Masala Craft</span>
+</div>
+
+<ul>
+<li><a href="#home">หน้าแรก</a></li>
+<li><a href="#menu">เมนู</a></li>
+<li><a href="#about">เกี่ยวกับเรา</a></li>
+<li><a href="#contact">ติดต่อ</a></li>
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero" id="home">
+
+<img src="images/logo.png" alt="Logo">
+
+<h1>Crafted with Spice<br>Served with Heart</h1>
+
+<p>
+
+Masala Craft คือแบรนด์เครื่องดื่มคราฟต์ที่ผสมผสานชา กาแฟ และเครื่องเทศธรรมชาติ
+เพื่อมอบรสชาติที่หอมละมุน อบอุ่น และไม่เหมือนใคร
+
+</p>
+
+<a class="btn" href="#menu">ดูเมนู</a>
+
+</section>
+
+<section id="menu">
+
+<div class="container">
+
+<h2>Signature Menu</h2>
+
+<div class="menu">
+
+<div class="card">
+<h3>☕ Spice Brew</h3>
+<p>กาแฟเครื่องเทศสูตรพิเศษ</p>
+<div class="price">65 บาท</div>
+</div>
+
+<div class="card">
+<h3>🍵 Masala Chai</h3>
+<p>ชาเครื่องเทศดั้งเดิม</p>
+<div class="price">80 บาท</div>
+</div>
+
+<div class="card">
+<h3>🧊 Pattaya Craft Cold Brew</h3>
+<p>Cold Brew หอมละมุน</p>
+<div class="price">75 บาท</div>
+</div>
+
+<div class="card">
+<h3>☕ Mocha Obsession</h3>
+<p>มอคค่าเข้มข้น</p>
+<div class="price">70 บาท</div>
+</div>
+
+<div class="card">
+<h3>🥐 Croissant</h3>
+<p>ครัวซองต์อบสดใหม่</p>
+<div class="price">40 บาท</div>
+</div>
+
+<div class="card">
+<h3>🥐 Almond Croissant</h3>
+<p>ครัวซองต์อัลมอนด์</p>
+<div class="price">50 บาท</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<h2>Our Story</h2>
+
+<div class="about">
+
+Masala Craft เกิดจากความหลงใหลในศิลปะของชา กาแฟ และเครื่องเทศ
+เราตั้งใจเบลนด์ทุกแก้วอย่างพิถีพิถัน เพื่อเปลี่ยนภาพจำของเครื่องดื่มมาซาล่า
+ให้กลายเป็นเครื่องดื่มที่ดื่มง่าย อบอุ่นหัวใจ และเหมาะกับทุกช่วงเวลาของวัน
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container">
+
+<h2>Contact</h2>
+
+<div class="contact">
+
+<p><strong>Email</strong></p>
+
+<p>contact.masalacraft@gmail.com</p>
+
+<br>
+
+<p><strong>Facebook</strong></p>
+
+<p>
+
+<a href="https://www.facebook.com/MasalaCraftG1?locale=th_TH" target="_blank">
+
+Masala Craft Pattaya
+
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<img src="images/logo.png" width="70">
+
+<p style="margin-top:15px;">
+Masala Craft
+</p>
+
+<p>
+Crafted with Spice • Served with Heart
+</p>
+
+<p style="margin-top:15px;">
+
+© 2026 Masala Craft
+
+</p>
+
+</footer>
+
+</body>
+</html>
